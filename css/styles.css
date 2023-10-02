@@ -12,7 +12,7 @@ html {
 
 header {
   width: 65%;
-  height: 85vh;
+  height: 98vh;
   border: 1px solid #000;
   margin: auto;
   transition: .3s linear;
@@ -181,9 +181,157 @@ header .content .content__box .image__box .card h6 {
   top: 15px;
   left: 15px;
   font-size: 14px;
-  z-index: 99999;
+  /* z-index: 99999; */
   color: #fff;
 }
+
+header .content .choose__box {
+  position: relative;
+  width: 90%;
+  height: auto;
+  margin: auto;
+  /* border: 1px solid #000; */
+}
+
+header .content .choose__box .stay__box {
+  display: flex;
+  align-items: center;
+}
+
+header .content .choose__box .stay__box button {
+  padding: 10px 30px;
+  background: #000;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: .3s linear;
+}
+
+header .content .choose__box .stay__box button:hover {
+  background: #fff;
+  color: #000;
+}
+
+header .content .choose__box .stay__box button:nth-child(1) {
+  border-radius: 10px 0px 0px 0px;
+  background: #fff;
+  color: #000;
+}
+
+header .content .choose__box .stay__box button:nth-last-child(1) {
+  border-radius: 0px 10px 0px 0px;
+}
+
+header .content .choose__box .stay__box button i {
+  margin-right: 5px;
+}
+
+header .content .choose__box .select {
+  width: 100%;
+  height: 135px;
+  background: #fff;
+  border-radius: 0px 10px 10px 10px;
+  position: relative;
+  padding: 10px 20px;
+  box-shadow: 0px 5px 15px - 10px rgb(214, 214, 214);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .content .choose__box .select .card {
+  width: 26%;
+  height: 95%;
+  border: 2px solid rgb(226, 226, 226, .7);
+  border-radius: 10px;
+  padding: 10px 0px 10px 30px;
+}
+
+header .content .choose__box .select .card:nth-last-child(1) {
+  width: 46%;
+}
+
+header .content .choose__box .select .card input {
+  width: 145px;
+}
+
+header .content .choose__box .select .card h5 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+header .content .choose__box .select .card input {
+  border: none;
+  outline: none;
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  background: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+header .content .choose__box .select .card input:nth-child(3) {
+  font-size: 12px;
+  font-weight: 500;
+  color: gray;
+}
+
+header .content .choose__box .select .card button {
+  border: none;
+  background: none;
+  outline: none;
+  margin-right: 20px;
+  margin-top: 5px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: .3s linear;
+}
+
+header .content .choose__box .select .card button:hover {
+  border-bottom: 2px solid rgb(177, 177, 177);
+}
+
+header .content .choose__box .select .card:nth-child(3) {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 15px;
+}
+
+header .content .choose__box .select .card:nth-child(3) .date {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid #000;
+  font-size: 15px;
+}
+
+header .content .choose__box .select .card:nth-child(3) .date input {
+  width: 27px;
+  height: 30px;
+  margin-left: 10px;
+  z-index: 9999999999999999999;
+  opacity: 1;
+}
+
+header .content .choose__box .select .card:nth-child(3) .date i {
+  position: absolute;
+  left: 85%;
+  font-size: 23px;
+  z-index: -1;
+}
+
+
+
+
+
+
+
+
+  
 
 
 
