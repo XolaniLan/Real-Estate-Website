@@ -13,7 +13,7 @@ html {
 header {
   width: 65%;
   height: 98vh;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   margin: auto;
   transition: .3s linear;
 }
@@ -22,7 +22,7 @@ header nav {
   width: 100%;
   height: 7%;
   margin: 5px auto;
-  border: 1px solid #000; 
+  /* border: 1px solid #000;  */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -90,7 +90,7 @@ header .content {
   position: relative;
   width: 100%;
   height: 93%;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   z-index: 5;
 }
 
@@ -305,7 +305,7 @@ header .content .choose__box .select .card:nth-child(3) .date {
   position: relative;
   display: flex;
   align-items: center;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   font-size: 15px;
 }
 
@@ -314,7 +314,7 @@ header .content .choose__box .select .card:nth-child(3) .date input {
   height: 30px;
   margin-left: 10px;
   z-index: 9999999999999999999;
-  opacity: 1;
+  opacity: 0;
 }
 
 header .content .choose__box .select .card:nth-child(3) .date i {
@@ -324,7 +324,80 @@ header .content .choose__box .select .card:nth-child(3) .date i {
   z-index: -1;
 }
 
+header .content .choose__box .select .card:nth-child(3) .date h3 {
+  width: 120px;
+}
 
+header .content .choose__box .select .card:nth-child(3) .date h5 {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.map {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  border: 1px solid #000;
+  top: -130px;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.map iframe {
+  opacity: .8;
+}
+
+.map::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  background: linear-gradient(0deg, transparent, #fff);
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.map::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  background: linear-gradient(180deg, transparent, #fff);
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.map .address__box {
+  position: absolute;
+  width: 240px;
+  height: 65px;
+  background: #fff;
+  box-shadow: 4px 4px 25px gray;
+  border-radius: 8px;
+  padding: 0px 20px;
+  top: 44%;
+  left: 30%;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.map .address__box .bi {
+  font-size: 25px;
+}
+
+.home {
+  position: relative;
+  width: 65%;
+  height: 230px;
+  margin: auto;
+  border: 1px solid #000;
+  top: -220px;
+  z-index: 2;
+}
 
 
 
